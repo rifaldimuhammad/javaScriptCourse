@@ -1,0 +1,42 @@
+.skill {
+  color: $color-black;
+  display: flex;
+  padding: 13rem 0;
+  gap: 12rem;
+
+  @include respond(bp-768){
+    gap: 5rem;
+  }
+  @include respond(phone){
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__img {
+      margin-bottom: 6rem;
+      height: 15rem;
+    }
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 2.7rem;
+      font-weight: 600;
+    }
+    &__text {
+      font-size: 1.7rem;
+      width: 80%;
+      line-height: 1.5;
+
+      @include respond(bp-1000) {
+        width: 100%;
+      }
+      @include respond(phone){
+        width: 70%;
+      }
+    }
+  }
+}

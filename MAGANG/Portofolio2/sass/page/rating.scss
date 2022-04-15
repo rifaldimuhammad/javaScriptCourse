@@ -1,0 +1,64 @@
+.rating {
+  color: $color-black;
+  padding: 14rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    color: inherit;
+    font-size: 3.2rem;
+    justify-self: center;
+    font-weight: 600;
+    padding-bottom: 5rem;
+  }
+  &-container {
+    overflow: auto;
+    flex-grow: 1;
+    width: 100%;
+
+    &-body {
+      display: flex;
+      gap: 5rem;
+      width: fit-content;
+      &-box {
+        color: inherit;
+        width: 36rem;
+        background-color: $color-grey;
+        padding: 2.8rem;
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        gap: 14rem;
+        &__text {
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+        &__profile {
+          display: flex;
+          gap: 2rem;
+          &--img {
+            height: 5rem;
+            border-radius: 50%;
+          }
+          &--star {
+            ion-icon {
+              font-size: 2rem;
+            }
+            &-name {
+              margin-top: 1rem;
+              font-size: 1.7rem;
+              p:nth-child(1) {
+              }
+              p:nth-child(2) {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.header {
+  color: $color-black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.6rem 0;
+  font-size: 1.7rem;
+  &-logo {
+    a {
+      color: inherit;
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+  &-nav {
+    display: flex;
+    gap: 5rem;
+    &__link {
+      font-size: inherit;
+      color: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.home {
+  color: $color-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 0;
+
+  @include respond(bp-970) {
+    flex-direction: column;
+  }
+  &-titleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @include respond(bp-970) {
+      align-items: center;
+      text-align: center;
+      margin-bottom: 8rem;
+      gap: 3.5rem;
+    }
+
+    &__brand {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    &__title {
+      font-size: 10rem;
+      font-weight: 800;
+      width: 50%;
+
+      @include respond(bp-970) {
+        width: unset;
+      }
+
+      @include respond(bp-400){
+        font-size: 8rem;
+      }
+    }
+    &__description {
+      font-size: 1.7rem;
+      width: 55%;
+      line-height: 1.4;
+    }
+  }
+  &-img {
+    img {
+      width: 100%;
+      height: 56rem;
+    }
+  }
+}
+
+.brand {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 6rem;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+      height: 3.5rem;
+      width: 100%;
+
+      @include respond(phone) {
+        height: 3rem;
+      }
+    }
+  }
+}
