@@ -1,0 +1,19 @@
+html {
+  font-family: 'Epilogue', sans-serif;
+}
+#root{
+   
+    margin: 0 1rem;
+}
+
+.header-nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header-nav .nav-items{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+}
